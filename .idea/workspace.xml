@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="2512707c-9a0b-4d12-9de1-d8c356d4013d" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/staffcheck-frontend/src/app/models/attendance.model.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staffcheck-frontend/src/app/models/employee.model.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/staffcheck-frontend/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/staffcheck-frontend/angular.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/staffcheck-frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/staffcheck-frontend/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/staffcheck-frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/staffcheck-frontend/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/staffcheck-frontend/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/staffcheck-frontend/src/app/app.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/staffcheck-frontend/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/staffcheck-frontend/src/app/app.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/staffcheck-frontend/src/app/app.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/staffcheck-frontend/src/app/app.config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/staffcheck-frontend/src/app/app.routes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/staffcheck-frontend/src/app/app.routes.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/staffcheck-frontend/src/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/staffcheck-frontend/src/styles.css" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="TypeScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/staffcheck-frontend" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="2hkDYdUcbE3vRqZe1qBaCy2uv4v" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "C:/Users/kARKOURI/Desktop/StaffCheck",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "ts.external.directory.path": "C:\\Users\\kARKOURI\\Desktop\\StaffCheck\\staffcheck-frontend\\node_modules\\typescript\\lib",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="StaffcheckBackendApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="staffcheck-backend" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.mundiapolis.staffcheckbackend.StaffcheckBackendApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2512707c-9a0b-4d12-9de1-d8c356d4013d" name="Changes" comment="" />
+      <created>1718129230285</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1718129230285</updated>
+      <workItem from="1718129231282" duration="9590000" />
+      <workItem from="1718215112995" duration="10145000" />
+      <workItem from="1718387661414" duration="816000" />
+      <workItem from="1718497237281" duration="137000" />
+      <workItem from="1718555755520" duration="3904000" />
+      <workItem from="1718650387486" duration="3870000" />
+      <workItem from="1718717264657" duration="9093000" />
+      <workItem from="1718738419151" duration="7412000" />
+      <workItem from="1718817951029" duration="9066000" />
+      <workItem from="1718907225241" duration="2259000" />
+      <workItem from="1718986196153" duration="16135000" />
+      <workItem from="1719072173909" duration="12678000" />
+      <workItem from="1719161050507" duration="11692000" />
+      <workItem from="1719223672004" duration="518000" />
+      <workItem from="1719225220679" duration="786000" />
+      <workItem from="1719261184146" duration="120000" />
+      <workItem from="1723660347815" duration="276000" />
+      <workItem from="1723660654779" duration="1667000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
