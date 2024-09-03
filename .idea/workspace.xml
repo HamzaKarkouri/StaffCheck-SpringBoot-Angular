@@ -7,11 +7,17 @@
     <list default="true" id="2512707c-9a0b-4d12-9de1-d8c356d4013d" name="Changes" comment="">
       <change afterPath="$PROJECT_DIR$/staffcheck-frontend/src/app/models/attendance.model.ts" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/staffcheck-frontend/src/app/models/employee.model.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/staffcheck-backend/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/staffcheck-backend/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/staffcheck-backend/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/staffcheck-backend/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/staffcheck-frontend" beforeDir="false" afterPath="$PROJECT_DIR$/staffcheck-frontend" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/staffcheck-frontend/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/staffcheck-frontend/angular.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/staffcheck-frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/staffcheck-frontend/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/staffcheck-frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/staffcheck-frontend/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/staffcheck-frontend/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/staffcheck-frontend/src/app/app.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/staffcheck-frontend/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/staffcheck-frontend/src/app/app.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/staffcheck-frontend/src/app/app.config.server.ts" beforeDir="false" afterPath="$PROJECT_DIR$/staffcheck-frontend/src/app/app.config.server.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/staffcheck-frontend/src/app/app.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/staffcheck-frontend/src/app/app.config.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/staffcheck-frontend/src/app/app.routes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/staffcheck-frontend/src/app/app.routes.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/staffcheck-frontend/src/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/staffcheck-frontend/src/styles.css" afterDir="false" />
@@ -25,11 +31,13 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="TypeScript File" />
+        <option value="Dockerfile" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/staffcheck-frontend" />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -44,6 +52,10 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
@@ -54,6 +66,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
     "ts.external.directory.path": "C:\\Users\\kARKOURI\\Desktop\\StaffCheck\\staffcheck-frontend\\node_modules\\typescript\\lib",
     "vue.rearranger.settings.migration": "true"
   }
@@ -92,7 +105,23 @@
       <workItem from="1719225220679" duration="786000" />
       <workItem from="1719261184146" duration="120000" />
       <workItem from="1723660347815" duration="276000" />
-      <workItem from="1723660654779" duration="1667000" />
+      <workItem from="1723660654779" duration="2711000" />
+      <workItem from="1723922313788" duration="1039000" />
+      <workItem from="1724182135698" duration="1553000" />
+      <workItem from="1724359599159" duration="461000" />
+      <workItem from="1724440671826" duration="2457000" />
+      <workItem from="1724443554193" duration="1564000" />
+      <workItem from="1724616859507" duration="660000" />
+      <workItem from="1724783759509" duration="3162000" />
+      <workItem from="1724786968981" duration="308000" />
+      <workItem from="1724787296028" duration="74000" />
+      <workItem from="1724787512998" duration="2581000" />
+      <workItem from="1724790130842" duration="2296000" />
+      <workItem from="1724867127222" duration="7126000" />
+      <workItem from="1724961787908" duration="4119000" />
+      <workItem from="1725044359459" duration="6090000" />
+      <workItem from="1725304129744" duration="6340000" />
+      <workItem from="1725393877787" duration="3724000" />
     </task>
     <servers />
   </component>
