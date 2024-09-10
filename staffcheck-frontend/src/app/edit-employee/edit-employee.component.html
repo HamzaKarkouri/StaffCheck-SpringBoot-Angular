@@ -1,0 +1,71 @@
+<div class="container">
+  <div class="card col-md-6 offset-3 mt-5">
+    <div class="card-header bg-dark text-light">
+      Update Customer Profile
+    </div>
+    <div class="card-body" >
+      <form [formGroup]="updateEmployeeFormGroup" (ngSubmit)="updateEmployee()">
+        <div class="mb-3">
+          <div class="mb-3">
+            <label class="form-label ">Name</label>
+            <input type="text" formControlName="name" class="form-control">
+            <span class="text-danger" *ngIf="updateEmployeeFormGroup.controls['name'].touched
+                && updateEmployeeFormGroup.controls['name'].errors
+                && updateEmployeeFormGroup.controls['name'].errors!['required']">
+                Name is required
+              </span>
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Email</label>
+            <input type="text" formControlName="email" class="form-control">
+            <span class="text-danger" *ngIf="updateEmployeeFormGroup.controls['email'].touched
+                && updateEmployeeFormGroup.controls['email'].errors
+                && updateEmployeeFormGroup.controls['email'].errors!['required']">
+                email is required
+              </span>
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Phone Number</label>
+            <input type="text" formControlName="phoneNumber" class="form-control">
+            <span class="text-danger" *ngIf="updateEmployeeFormGroup.controls['phoneNumber'].touched
+              && updateEmployeeFormGroup.controls['phoneNumber'].hasError('required')">
+              Phone Number is required
+            </span>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Joining date</label>
+            <input type="date" formControlName="joining" class="form-control">
+            <span class="text-danger" *ngIf="updateEmployeeFormGroup.controls['joining'].touched
+              && updateEmployeeFormGroup.controls['joining'].hasError('required')">
+              Joining date is required
+            </span>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Role</label>
+            <input type="text" formControlName="role" class="form-control">
+            <span class="text-danger" *ngIf="updateEmployeeFormGroup.controls['role'].touched
+              && updateEmployeeFormGroup.controls['role'].hasError('required')">
+              Role is required
+            </span>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Department</label>
+            <input type="text" formControlName="department" class="form-control">
+            <span class="text-danger" *ngIf="updateEmployeeFormGroup.controls['department'].touched
+              && updateEmployeeFormGroup.controls['department'].hasError('required')">
+              Department is required
+            </span>
+          </div>
+          <div class="d-flex justify-content-between mt-3">
+            <button type="button" (click)="goBack()" class="btn btn-danger">Back</button>
+            <button [disabled]="!updateEmployeeFormGroup.valid" class="btn btn-success">Save</button>
+          </div>
+
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

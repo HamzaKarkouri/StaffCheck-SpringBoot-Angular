@@ -1,0 +1,192 @@
+<!-- users.component.html -->
+<ng-container *ngIf="employees$ | async as listEmployees; else failureOrLoading">
+
+<div class="container-fluid">
+
+  <!-- Page Title -->
+  <h2 class="mt-4 mb-4">Employee Management</h2>
+
+
+
+
+  <!-- Employee Table -->
+  <div class="card shadow-lg border-0 ">
+    <div class="card-header d-flex justify-content-between align-items-center">
+      <div class="search-form" *ngIf="searchFormGroup">
+        <form [formGroup]="searchFormGroup" (ngSubmit)="handleSearchemployees()">
+          <div class="input-group">
+            <input type="text" formControlName="keyword" class="form-control" placeholder="Search employees..." aria-label="Search employees">
+            <button class="btn btn-outline-secondary" type="submit">Search</button>
+          </div>
+        </form>
+      </div>
+      <div *ngIf="injector.roles.includes('ADMIN')">
+        <button class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#addemployee">
+          <i class="fa-solid fa-user-plus"></i> Add New Employee
+        </button>
+      </div>
+    </div>
+    <div class="card-body">
+  <div class="row">
+    <div class="col-12">
+      <table class="table  align-middle">
+        <thead>
+        <tr>
+          <th scope="col">Image</th>
+          <th scope="col">Name</th>
+          <th scope="col">Department</th>
+          <th scope="col">Role</th>
+          <th scope="col">Phone</th>
+          <th scope="col">Email</th>
+
+          <th scope="col">Joining Date</th>
+          <th scope="col">Badge</th>
+          <th scope="col">Actions</th>
+        </tr>
+        </thead>
+        <tbody>
+        <!-- Loop through employees array and display each employee -->
+        <tr *ngFor="let e of employees$ | async" >
+          <td><img *ngIf="e.image" [src]="e.image" alt="" style="max-width: 100px; max-height: 50px;">
+            <span *ngIf="!e.image">No Image Available</span></td>
+          <td>
+
+            {{ e.name }}</td>
+          <td>{{ e.department }}</td>
+          <td>{{ e.role }}</td>
+
+          <td>{{ e.phoneNumber }}</td>
+          <td>{{ e.email }}</td>
+          <td>{{ e.joining | date }}</td>
+          <td><button class="btn btn-secondary" (click)="downloadBadge(e.image,e.name, e.qr)"><i class="fa-solid fa-qrcode"></i></button></td>
+          <td>
+            <button (click)="handleUpdateEmployee(e)" class="btn btn-sm btn-outline-primary me-2"><i class="fa-regular fa-pen-to-square"></i></button>
+            <button (click)="handleDeleteEmployee(e)" class="btn btn-sm btn-outline-danger"><i class="fa-regular fa-trash-can"></i></button>
+          </td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+    </div>
+  </div>
+</div>
+</ng-container>
+
+<ng-template #failureOrLoading>
+  <ng-container *ngIf="errorMessage; else loading">
+    <div class="alert alert-danger mt-3">
+      {{ errorMessage }}
+    </div>
+  </ng-container>
+  <ng-template #loading>
+    <div class="d-flex justify-content-center align-items-center mt-5">
+      <div class="spinner-border text-primary" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+    </div>
+  </ng-template>
+</ng-template>
+
+<!-- Bootstrap Modal for Add Employee Form -->
+<div class="modal " tabindex="-1" role="dialog" id="addemployee" [ngClass]="{'show': showModal}" style="display: none;">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Add New Employee</h5>
+        <button type="button" class="btn-close" aria-label="Close" (click)="closeModal()"></button>
+      </div>
+      <div class="modal-body">
+        <!-- Form to add new employee -->
+        <form
+          [formGroup]="newEmployeeFormGroup"
+          (ngSubmit)="handleSaveEmployee()"
+        >
+          <div class="mb-3">
+            <label for="image" class="form-label">Image</label>
+            <input type="file" class="form-control" id="image" name="image" formControlName="image" (change)="onFileSelected($event)">
+            <span class="text-danger"
+                  *ngIf="
+              newEmployeeFormGroup.controls['image'].touched &&
+              newEmployeeFormGroup.controls['image'].errors &&
+              newEmployeeFormGroup.controls['image'].errors!['required']">
+            Image is Required
+          </span>
+          </div>
+          <div class="mb-3">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" class="form-control" id="name" name="name" formControlName="name">
+            <span class="text-danger"
+                  *ngIf="
+              newEmployeeFormGroup.controls['name'].touched &&
+              newEmployeeFormGroup.controls['name'].errors &&
+              newEmployeeFormGroup.controls['name'].errors!['required']">
+            Name is Required
+          </span>
+          </div>
+          <div class="mb-3">
+            <label for="department" class="form-label">Department</label>
+            <input type="text" class="form-control" id="department" name="department" formControlName="department">
+            <span class="text-danger"
+                  *ngIf="
+              newEmployeeFormGroup.controls['department'].touched &&
+              newEmployeeFormGroup.controls['department'].errors &&
+              newEmployeeFormGroup.controls['department'].errors!['required']">
+            Department is Required
+          </span>
+          </div>
+          <div class="mb-3">
+            <label for="role" class="form-label">Role</label>
+            <input type="text" class="form-control" id="role" name="role" formControlName="role">
+            <span class="text-danger"
+                  *ngIf="
+              newEmployeeFormGroup.controls['role'].touched &&
+              newEmployeeFormGroup.controls['role'].errors &&
+              newEmployeeFormGroup.controls['role'].errors!['required']">
+            Role is Required
+          </span>
+          </div>
+
+          <div class="mb-3">
+            <label for="mobile" class="form-label">Phone</label>
+            <input type="tel" class="form-control" id="mobile" name="mobile" formControlName="phoneNumber">
+            <span class="text-danger"
+                  *ngIf="
+              newEmployeeFormGroup.controls['phoneNumber'].touched &&
+              newEmployeeFormGroup.controls['phoneNumber'].errors &&
+              newEmployeeFormGroup.controls['phoneNumber'].errors!['required']">
+            Phone number is Required
+          </span>
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" name="email" formControlName="email">
+            <span class="text-danger"
+                  *ngIf="
+              newEmployeeFormGroup.controls['email'].touched &&
+              newEmployeeFormGroup.controls['email'].errors &&
+              newEmployeeFormGroup.controls['email'].errors!['required']">
+            Email is Required
+          </span>
+          </div>
+          <div class="mb-3">
+            <label for="joiningDate" class="form-label">Joining Date</label>
+            <input type="date" class="form-control" id="joiningDate" name="joiningDate" formControlName="joining">
+            <span class="text-danger"
+                  *ngIf="
+              newEmployeeFormGroup.controls['joining'].touched &&
+              newEmployeeFormGroup.controls['joining'].errors &&
+              newEmployeeFormGroup.controls['joining'].errors!['required']">
+            Joining date is Required
+          </span>
+          </div>
+
+      <div class="modal-footer">
+        <button type="button"  class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button [disabled]="!newEmployeeFormGroup.valid" type="submit" class="btn btn-primary" data-bs-dismiss="modal" >Save Employee</button>
+      </div>
+      </form>
+    </div>
+    </div>
+  </div>
+</div>

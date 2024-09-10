@@ -1,0 +1,44 @@
+<!--&lt;!&ndash; attendance.component.html &ndash;&gt;-->
+<!--<div class="container-fluid">-->
+<!--  <div class="row">-->
+<!--    <div class="col-12">-->
+<!--      <h2>Mark Attendance</h2>-->
+<!--      <select (change)="onDeviceSelectCahnge($event.target.value)">-->
+<!--        <option value="" [selected]="!currentDevice">No device selected</option>-->
+<!--        <option *ngFor="let device of availableDevices" [value]="device.deviceId" [selected]="currentDevice && device.deviceId=== currentDevice.deviceId">{{device.label}}</option>-->
+<!--      </select>-->
+<!--      <zxing-scanner (scanSuccess)="handleQrCodeResult($event)"></zxing-scanner>-->
+<!--&lt;!&ndash;      <zxing-scanner #scanner (scanSuccess)="onCodeResult($event)"></zxing-scanner>&ndash;&gt;-->
+<!--&lt;!&ndash;      <p *ngIf="qrResultString">Scanned: {{ qrResultString }}</p>&ndash;&gt;-->
+<!--    </div>-->
+<!--  </div>-->
+<!--</div>-->
+
+
+<div class="scanner-container" *ngIf="isBrowser">
+  <select (change)="onDeviceSelectChange($event)">
+    <option *ngFor="let device of availableDevices; let i = index" [value]="device.deviceId">
+      {{ device.label || 'Camera ' + (i + 1) }}
+    </option>
+  </select>
+  <zxing-scanner
+    [device]="currentDevice"
+    (scanSuccess)="handleQrCodeResult($event)"
+    (camerasFound)="onCamerasFound($event)"
+    (camerasNotFound)="onCamerasNotFound()"
+    (permissionResponse)="onPermissionResponse($event)"
+    (scanError)="onScanError($event)"
+  ></zxing-scanner>
+  <div *ngIf="!hasPermission">Camera access is not permitted. Please allow camera access.</div>
+  <div *ngIf="!hasDevices">No camera devices found.</div>
+</div>
+
+
+<form (ngSubmit)="onSubmit()" #idForm="ngForm">
+  <div>
+    <label for="eId">Employee ID:</label>
+    <input type="text" id="eId" required [(ngModel)]="eId" name="eId" #eIdInput="ngModel">
+  </div>
+  <button type="submit" [disabled]="!idForm.form.valid">Submit</button>
+</form>
+

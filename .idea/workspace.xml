@@ -5,24 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2512707c-9a0b-4d12-9de1-d8c356d4013d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/staffcheck-backend/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/staffcheck-frontend/src/app/models/attendance.model.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/staffcheck-frontend/src/app/models/employee.model.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/staffcheck.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/staffcheck.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/staffcheck-backend/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/staffcheck-backend/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/staffcheck-backend/src/main/java/com/mundiapolis/staffcheckbackend/repositories/AttendanceRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/staffcheck-backend/src/main/java/com/mundiapolis/staffcheckbackend/repositories/AttendanceRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/staffcheck-backend/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/staffcheck-backend/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/staffcheck-frontend" beforeDir="false" afterPath="$PROJECT_DIR$/staffcheck-frontend" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/staffcheck-frontend/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/staffcheck-frontend/angular.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/staffcheck-frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/staffcheck-frontend/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/staffcheck-frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/staffcheck-frontend/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/staffcheck-frontend/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/staffcheck-frontend/src/app/app.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/staffcheck-frontend/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/staffcheck-frontend/src/app/app.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/staffcheck-frontend/src/app/app.config.server.ts" beforeDir="false" afterPath="$PROJECT_DIR$/staffcheck-frontend/src/app/app.config.server.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/staffcheck-frontend/src/app/app.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/staffcheck-frontend/src/app/app.config.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/staffcheck-frontend/src/app/app.routes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/staffcheck-frontend/src/app/app.routes.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/staffcheck-frontend/src/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/staffcheck-frontend/src/styles.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,17 +19,21 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="TypeScript File" />
         <option value="Dockerfile" />
+        <option value="HTML File" />
+        <option value="TypeScript File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/staffcheck-frontend" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="ProjectErrors" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 6
@@ -52,34 +43,51 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Users/kARKOURI/Desktop/StaffCheck",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
-    "ts.external.directory.path": "C:\\Users\\kARKOURI\\Desktop\\StaffCheck\\staffcheck-frontend\\node_modules\\typescript\\lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/kARKOURI/Desktop/StaffCheck&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\kARKOURI\\Desktop\\StaffCheck\\staffcheck-frontend\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
-  <component name="RunManager">
+}</component>
+  <component name="RunManager" selected="Spring Boot.StaffcheckBackendApplication">
+    <configuration name="Angular Application (staffcheck-frontend)" type="JavascriptDebugType" uri="http://localhost:4200">
+      <method v="2" />
+    </configuration>
     <configuration name="StaffcheckBackendApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="staffcheck-backend" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.mundiapolis.staffcheckbackend.StaffcheckBackendApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
+    </configuration>
+    <configuration name="Angular CLI Server (staffcheck-frontend)" type="js.build_tools.npm">
+      <package-json value="$PROJECT_DIR$/staffcheck-frontend/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
     </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -123,11 +131,30 @@
       <workItem from="1724961787908" duration="4119000" />
       <workItem from="1725044359459" duration="6090000" />
       <workItem from="1725304129744" duration="6340000" />
-      <workItem from="1725393877787" duration="4029000" />
+      <workItem from="1725393877787" duration="5795000" />
+      <workItem from="1725476636178" duration="966000" />
+      <workItem from="1725480083784" duration="1216000" />
+      <workItem from="1725481322593" duration="1471000" />
+      <workItem from="1725566040442" duration="4048000" />
+      <workItem from="1725732533188" duration="9900000" />
+      <workItem from="1725823169357" duration="7252000" />
+      <workItem from="1725911945689" duration="5851000" />
+      <workItem from="1725993305151" duration="3694000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

@@ -1,0 +1,64 @@
+<!-- attendance.component.html -->
+
+<div class="container-fluid">
+  <!-- Page Title -->
+  <h2 class="mt-4 mb-4">Attendance Management</h2>
+
+  <!-- Employee Selector -->
+
+
+  <!-- Attendance Table -->
+  <!-- Employee Table -->
+  <div class="card shadow-lg border-0 ">
+    <div class="card-header d-flex justify-content-between align-items-center">
+      <div class="row mb-3">
+        <div class="search-form" *ngIf="searchFormGroup">
+          <form [formGroup]="searchFormGroup" (ngSubmit)="handleSearchattendances()">
+            <div class="input-group">
+              <input type="text" formControlName="keyword" class="form-control" placeholder="Search employees..." aria-label="Search employees">
+              <button class="btn btn-outline-secondary" type="submit">Search</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="row">
+        <div class="col-12">
+          <table class="table  align-middle">
+            <thead>
+            <tr>
+              <th scope="col">Image</th>
+              <th scope="col">Employee</th>
+
+              <th scope="col">Date</th>
+              <th scope="col">CheckIn</th>
+              <th scope="col">CheckOut</th>
+              <th scope="col">Working hours</th>
+
+              <th scope="col">Actions</th>
+            </tr>
+            </thead>
+            <tbody>
+            <!-- Loop through employees array and display each employee -->
+            <tr *ngFor="let e of attendances$ | async" >
+              <td><img *ngIf="e.image" [src]="e.image" alt="" style="max-width: 100px; max-height: 50px;">
+                <span *ngIf="!e.image">No Image Available</span></td>
+              <td>{{e.name}}
+              <td>{{ e.day }}</td>
+              <td>{{ e.checkin }}</td>
+              <td>{{ e.checkout }}</td>
+
+              <td>{{ e.working }}</td>
+              <td>
+                <button  class="btn btn-sm btn-outline-primary me-2"><i class="fa-regular fa-pen-to-square"></i></button>
+                <button  class="btn btn-sm btn-outline-danger"><i class="fa-regular fa-trash-can"></i></button>
+              </td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

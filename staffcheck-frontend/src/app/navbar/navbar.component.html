@@ -1,0 +1,27 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <button class="menu-icon" type="button" (click)="toggleSidebar()">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+    <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3" href="#">My Dashboard</a>
+    <ul class="navbar-nav px-3" *ngIf="injector.isAuthenticated">
+      <li class="nav-item text-nowrap">
+
+        <div class="dropdown">
+          <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" >
+            {{injector.username}}
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+            <li><a (click)="handleLogout()" class="dropdown-item" href="#">Sign out</a></li>
+
+          </ul>
+        </div>
+      </li>
+    </ul>
+  </div>
+</nav>
+<hr class="navbar-divider">
+
+
+
+

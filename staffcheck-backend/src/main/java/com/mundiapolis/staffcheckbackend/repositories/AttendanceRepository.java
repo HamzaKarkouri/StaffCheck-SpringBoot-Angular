@@ -12,6 +12,6 @@ import java.util.Optional;
 public interface AttendanceRepository extends JpaRepository<Attendance, Long> {
     List<Attendance> getAttendanceByEmployee_Id(Long employeeId);
     Optional<Attendance> findByEmployeeIdAndCheckoutIsNull(Long employeeId);
-    @Query("select c from Attendance c where c.checkin like :kw")
+    @Query("select c from Attendance c where c.Name like :kw")
     List<Attendance> searchAttendance(@Param("kw") String keyword);
 }

@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Barcode+128+Text&display=swap'); /* styles.css */
+@import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+@import '../node_modules/bootstrap-icons/font/bootstrap-icons.min.css';
+@import '../node_modules/@fortawesome/fontawesome-free/css/all.css';
+
+:root {
+  --color-primary: #254336;
+  --color-secondary: #6B8A7A;
+  --color-tertiary: #B7B597;
+  --color-quaternary: #DAD3BE;
+}
+
+body {
+  background-color: var(--color-quaternary);
+  color: #333;
+}
+
+/* Wrapper Styles */
+#wrapper {
+  transition: margin-left 0.3s ease-in-out;
+}
+
+#wrapper.sidebar-open {
+  margin-left: 250px; /* Adjust main content margin when sidebar is open */
+}
+
+
+/* Navbar Styles */
+.navbar {
+  transition: margin-left 0.3s ease-in-out;
+}
+
+.navbar-divider {
+  border: 0;
+  height: 1px;
+  background-color: grey;
+  margin: 0;
+}
+.menu-icon {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 24px; /* Adjust icon size as needed */
+}
+
+/* Sidebar Styles */
+
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px; /* Adjust as needed */
+  height: 100%;
+  background-color: #333; /* Example color */
+  transition: transform 0.3s ease-in-out;
+  transform: translateX(-250px); /* Hide sidebar by default */
+}
+
+.sidebar.open {
+  transform: translateX(0); /* Show sidebar when open */
+}
+
+
+
+
+
+
+
+.sidebar-header {
+  padding: 15px;
+  text-align: center;
+  position: relative; /* Add relative positioning */
+}
+
+.barcode-text {
+  font-family: 'Libre Barcode 128 Text', system-ui;
+  font-size: 45px; /* Adjust as needed */
+  text-align: center;
+  position: absolute; /* Add relative positioning */
+  top: -3px; /* Adjust vertical alignment */
+  color: white;
+left: 20%;
+}
+.barcode-text2 {
+  font-family: 'Libre Barcode 128 Text', system-ui;
+  font-size: 100px; /* Adjust as needed */
+
+   /* Add relative positioning */
+   /* Adjust vertical alignment */
+  color: black;
+
+}
+.sidebar-divider {
+  border: 0;
+  height: 1px;
+  background-color: grey;
+  margin: 40px 0;
+  clear: both; /* Add clear:both to ensure it appears after floated elements */
+
+}
+
+.sidebar-items {
+  margin-top: -10px; /* Space between header and items */
+}
+
+.sidebar-items .nav-item {
+  margin-bottom: 10px; /* Space between items */
+  opacity: 0.5;
+  transition: opacity 0.3s ease;
+  border-radius: 8px; /* Rounded corners */
+  padding: 10px 15px; /* Padding inside items */
+}
+
+.sidebar-items .nav-link {
+  color: var(--color-tertiary);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.sidebar-items .nav-item:hover {
+  opacity: 1; /* Opacity on hover or active state */
+}
+.sidebar-items .nav-item:active {
+  opacity: 1; /* Opacity on hover or active state */
+}
+.sidebar-items .nav-link i {
+  margin-right: 10px; /* Space between icon and text */
+
+}
+
+/* Active button style */
+.nav-button.active {
+  background-color: #ffc107;
+  color: #343a40;
+}
+
