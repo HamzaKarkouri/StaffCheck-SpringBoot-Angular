@@ -5,10 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2512707c-9a0b-4d12-9de1-d8c356d4013d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/staffcheck.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/staffcheck.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/staffcheck-backend/src/main/java/com/mundiapolis/staffcheckbackend/repositories/AttendanceRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/staffcheck-backend/src/main/java/com/mundiapolis/staffcheckbackend/repositories/AttendanceRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/staffcheck-backend/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/staffcheck-backend/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -139,7 +137,8 @@
       <workItem from="1725732533188" duration="9900000" />
       <workItem from="1725823169357" duration="7252000" />
       <workItem from="1725911945689" duration="5851000" />
-      <workItem from="1725993305151" duration="3694000" />
+      <workItem from="1725993305151" duration="4814000" />
+      <workItem from="1726083141952" duration="2304000" />
     </task>
     <servers />
   </component>
