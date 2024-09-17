@@ -1,0 +1,45 @@
+/* Ensure the image covers the left side and the login form is on the right */
+.container {
+    display: flex;
+    height: 100vh; /* Full viewport height */
+}
+
+.row {
+    display: flex;
+
+}
+
+.col-md-6 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.d-none.d-md-block {
+    /* Ensure the image is only visible on medium screens and up */
+    display: block;
+}
+
+.img-fluid {
+    width: 100%;
+    height: 70%;
+
+}
+
+.login-form-container {
+    width: 70%; /* Full width for the login container */
+height: 70%;
+}
+
+.text-dark {
+    color: #343a40; /* Adjust the color as needed */
+}
+.barcode-text3 {
+    font-family: "Pacifico", cursive;
+    font-size: 50px; /* Adjust as needed */
+
+    /* Add relative positioning */
+    /* Adjust vertical alignment */
+    color: black;
+
+}

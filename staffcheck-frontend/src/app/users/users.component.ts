@@ -123,9 +123,7 @@ export class UsersComponent implements OnInit {
     });
   }
 
-  handleEditEmployee() {
-    throw new Error('Method not implemented.');
-  }
+
 
 
   handleUpdateEmployee(employee: Employee) {

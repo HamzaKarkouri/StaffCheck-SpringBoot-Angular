@@ -6,8 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="2512707c-9a0b-4d12-9de1-d8c356d4013d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/staffcheck-backend/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/staffcheck-backend/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,7 +29,7 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="ProjectErrors" />
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 6
@@ -138,7 +136,12 @@
       <workItem from="1725823169357" duration="7252000" />
       <workItem from="1725911945689" duration="5851000" />
       <workItem from="1725993305151" duration="4814000" />
-      <workItem from="1726083141952" duration="2304000" />
+      <workItem from="1726083141952" duration="3017000" />
+      <workItem from="1726166433364" duration="4169000" />
+      <workItem from="1726255869572" duration="6334000" />
+      <workItem from="1726343277166" duration="4177000" />
+      <workItem from="1726425566751" duration="2331000" />
+      <workItem from="1726603605046" duration="360000" />
     </task>
     <servers />
   </component>

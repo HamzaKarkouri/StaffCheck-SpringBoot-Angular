@@ -9,15 +9,18 @@ import { ScannerService } from '../services/scanner.service';
 import {Employee} from "../models/employee.model";
 import {Observable} from "rxjs";
 import {EmployeeService} from "../services/employee.service";
+import {NgIf, NgOptimizedImage} from "@angular/common";
 @Component({
   selector: 'app-login',
   standalone: true,
-  imports: [
-    ReactiveFormsModule,
-    ZXingScannerModule,
-    RouterLink,
+    imports: [
+        ReactiveFormsModule,
+        ZXingScannerModule,
+        RouterLink,
+        NgOptimizedImage,
+        NgIf,
 
-  ],
+    ],
   templateUrl: './login.component.html',
   styleUrl: './login.component.css'
 })
